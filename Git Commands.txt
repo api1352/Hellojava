@@ -1,0 +1,67 @@
+C:\Users\PritamChatterjee>git --version
+git version 2.32.0.windows.1
+
+C:\Users\PritamChatterjee>git config --global user.name "Trainer"
+
+C:\Users\PritamChatterjee>git config --global user.email "pritam.chatterjee@apisero.com"
+
+C:\Users\PritamChatterjee>d:
+
+D:\>mkdir gitdemo
+
+D:\>cd gitdemo
+
+D:\gitdemo>git init
+Initialized empty Git repository in D:/gitdemo/.git/
+
+D:\gitdemo>git add Hello.txt
+
+D:\gitdemo>git status
+On branch master
+
+No commits yet
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hello.txt
+
+
+D:\gitdemo>git commit -m "this is first commit"
+[master (root-commit) 1a1de2f] this is first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hello.txt
+
+D:\gitdemo>git log
+commit 1a1de2ffe23c2545c3916bdbe9ad96883f1b1cfb (HEAD -> master)
+Author: Trainer <pritam.chatterjee@apisero.com>
+Date:   Thu Jul 22 12:15:15 2021 +0530
+
+    this is first commit
+
+D:\gitdemo>git tag 
+v1.1
+
+D:\gitdemo>git show v1.1
+tag v1.1
+Tagger: Trainer <pritam.chatterjee@apisero.com>
+Date:   Thu Jul 22 12:17:27 2021 +0530
+
+this is first tag
+
+commit 1a1de2ffe23c2545c3916bdbe9ad96883f1b1cfb (HEAD -> master, tag: v1.1)
+Author: Trainer <pritam.chatterjee@apisero.com>
+Date:   Thu Jul 22 12:15:15 2021 +0530
+
+    this is first commit
+
+diff --git a/Hello.txt b/Hello.txt
+new file mode 100644
+index 0000000..17ba246
+--- /dev/null
++++ b/Hello.txt
+@@ -0,0 +1 @@
++Hello, how are you today?
+\ No newline 
+Greenfield Training-Batch-20
